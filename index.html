@@ -135,6 +135,29 @@
         </div>
       </div>
 
+      <!-- ✅ CALORIE TOOL (Full) -->
+      <div id="calorieTool" class="hero-card" style="margin-top: 30px;">
+        <h3>Calorie Calculator</h3>
+        <p class="small">Enter your weight and activity level to estimate calories.</p>
+      
+        <label>Weight (kg)</label>
+        <input id="calWeight" type="number" placeholder="e.g., 80" />
+      
+        <label>Activity</label>
+        <select id="calActivity">
+          <option value="1.2">Low (mostly sitting)</option>
+          <option value="1.4">Light (walks + normal day)</option>
+          <option value="1.6">Moderate (exercise 3–4x/week)</option>
+          <option value="1.8">High (hard training)</option>
+        </select>
+      
+        <button class="btn full" onclick="calcCaloriesTool()">Calculate Calories</button>
+      
+        <div id="calResult" class="result-box">Your calorie result will appear here ✅</div>
+      </div>
+
+
+      
       <!-- ✅ BMI Calculator -->
       <div id="bmiTool" class="hero-card" style="margin-top: 30px;">
         <h3>BMI Calculator</h3>
