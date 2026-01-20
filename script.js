@@ -1,21 +1,19 @@
 // ================================
 // 1) CALORIE ESTIMATOR (Quick)
 // ================================
-function calcCalories() {
-  const weight = Number(document.getElementById("weight").value);
-  const activity = Number(document.getElementById("activity").value);
-  const resultBox = document.getElementById("result");
+
+
+function calcCaloriesTool() {
+  const weight = Number(document.getElementById("calWeight").value);
+  const activity = Number(document.getElementById("calActivity").value);
+  const resultBox = document.getElementById("calResult");
 
   if (!weight || weight <= 0) {
     resultBox.innerHTML = "⚠️ Please enter a valid weight (kg).";
     return;
   }
 
-  // Simple estimate: 24 * weight = rough BMR
-  // activity multiplier gives maintenance calories
   const maintenance = Math.round(weight * 24 * activity);
-
-  // Healthy weight loss target
   const fatLoss = Math.round(maintenance - 400);
 
   resultBox.innerHTML = `
@@ -23,6 +21,7 @@ function calcCalories() {
     🔥 Suggested fat loss: <strong>${fatLoss} kcal/day</strong>
   `;
 }
+
 
 // ================================
 // 2) BMI CALCULATOR
