@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Diet Plans | Fitness Truth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">EasyDietPlans</div>
+    <nav>
+      <a href="#start">Start Here</a>
+      <a href="#plans">Diet Plans</a>
+      <a href="#tools">Calculators</a>
+      <a href="#blog">Blog</a>
+    </nav>
+    <a class="btn" href="#tools">Get Started</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Lose weight with simple diet plans & easy calculators.</h1>
+        <p>
+          No confusion. No extreme dieting. Just beginner-friendly steps you can follow today.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn big" href="plan-request.html">Get a Free Plan</a>
+          <a class="btn-outline big" href="#tools">Calculate Calories</a>
+        </div>
+
+        <div class="mini-stats">
+          <div class="stat">
+            <strong>✔ Free Plans</strong>
+            <span>Beginner-friendly</span>
+          </div>
+          <div class="stat">
+            <strong>✔ Simple Tools</strong>
+            <span>Calories, BMI, Protein</span>
+          </div>
+          <div class="stat">
+            <strong>✔ Clear Steps</strong>
+            <span>Start today</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Quick Calorie Check</h3>
+        <p class="small">Enter your weight (kg) to estimate daily calories.</p>
+
+        <label>Weight (kg)</label>
+        <input id="weight" type="number" placeholder="e.g., 80" />
+
+        <label>Activity</label>
+        <select id="activity">
+          <option value="1.2">Low (mostly sitting)</option>
+          <option value="1.4">Light (walks + normal day)</option>
+          <option value="1.6">Moderate (exercise 3–4x/week)</option>
+          <option value="1.8">High (hard training)</option>
+        </select>
+
+        <button class="btn full" onclick="calcCalories()">Estimate</button>
+
+        <div id="result" class="result-box">Your result will appear here ✅</div>
+      </div>
+    </section>
+
+    <section id="start" class="section">
+      <h2>Start Here (Beginner Friendly)</h2>
+      <div class="grid3">
+        <div class="card">
+          <h3>Step 1: Calculate calories</h3>
+          <p>Find your daily calorie target based on weight and activity.</p>
+        </div>
+        <div class="card">
+          <h3>Step 2: Pick a plan</h3>
+          <p>Choose a free plan that matches your lifestyle (simple meals).</p>
+        </div>
+        <div class="card">
+          <h3>Step 3: Stay consistent</h3>
+          <p>Follow for 7 days, track cravings, and improve weekly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="section soft">
+      <h2>Free Diet Plans</h2>
+      <p class="subtitle">Simple plans for busy people. No fancy ingredients.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>7-Day Beginner Plan</h3>
+          <p>Balanced meals + easy portions.</p>
+          <a class="link" href="#">View Plan →</a>
+        </div>
+
+        <div class="card">
+          <h3>1200–1500 Cal Plan</h3>
+          <p>For fat loss with safe structure.</p>
+          <a class="link" href="#">View Plan →</a>
+        </div>
+
+        <div class="card">
+          <h3>South Asian Plan</h3>
+          <p>Simple meals with rice/chapati options.</p>
+          <a class="link" href="#">View Plan →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <h2>Calculators</h2>
+      <p class="subtitle">Quick tools to guide your eating decisions.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Calorie Calculator</h3>
+          <p>Estimate maintenance and weight-loss calories.</p>
+          <a class="link" href="#tools">Use now →</a>
+        </div>
+        <div class="card">
+          <h3>BMI Calculator</h3>
+          <p>Check your BMI and category instantly.</p>
+          <a class="link" href="#tools">Use now →</a>
+        </div>
+        <div class="card">
+          <h3>Protein Calculator</h3>
+          <p>Get a simple protein target per day.</p>
+          <a class="link" href="#tools">Use now →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section soft">
+      <h2>Latest Blog Posts</h2>
+      <p class="subtitle">Real tips that actually work for beginners.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>How to stop sweet cravings</h3>
+          <p>Simple tricks that reduce cravings without stress.</p>
+          <a class="link" href="#">Read →</a>
+        </div>
+        <div class="card">
+          <h3>Why weight loss becomes slow</h3>
+          <p>The real reasons your scale stops moving.</p>
+          <a class="link" href="#">Read →</a>
+        </div>
+        <div class="card">
+          <h3>Best breakfast for fat loss</h3>
+          <p>Fast and cheap breakfast ideas.</p>
+          <a class="link" href="#">Read →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>EasyDietPlans</strong> — helping beginners eat better, one day at a time.</p>
+    <p class="small">© 2026. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

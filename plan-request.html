@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Your Free Diet Plan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">MyEasyDietPlan</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="plan-request.html">Get a Free Plan</a>
+    </nav>
+    <a class="btn" href="plan-request.html">Start</a>
+  </header>
+
+  <main class="section">
+    <h2>Get Your Free Diet Plan ✅</h2>
+    <p class="subtitle">
+      Answer a few quick questions and we’ll prepare your plan and send it to your email.
+    </p>
+
+    <!-- ✅ FORMSPREE FORM START -->
+    <form
+      action="https://formspree.io/f/mqeedrvd"
+      method="POST"
+      class="form-box"
+    >
+      <!-- ✅ Redirect AFTER submission (best for GitHub Pages) -->
+      <input type="hidden" name="_next" value="success.html">
+
+      <!-- ✅ Email subject -->
+      <input type="hidden" name="_subject" value="New Diet Plan Request ✅">
+
+      <!-- ✅ Optional spam protection (do not remove) -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <label>Your Name</label>
+      <input type="text" name="name" placeholder="Your full name" required />
+
+      <label>Your Email</label>
+      <input type="email" name="email" placeholder="example@gmail.com" required />
+
+      <!-- ✅ Helps Formspree reply correctly -->
+      <input type="hidden" name="_replyto" value="%email%">
+
+      <label>Age</label>
+      <input type="number" name="age" placeholder="e.g. 30" required />
+
+      <label>Gender</label>
+      <select name="gender" required>
+        <option value="" disabled selected>Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Weight (kg)</label>
+      <input type="number" name="weight" placeholder="e.g. 70" required />
+
+      <label>Height (cm)</label>
+      <input type="number" name="height" placeholder="e.g. 170" required />
+
+      <label>Your Goal</label>
+      <select name="goal" required>
+        <option value="" disabled selected>Select</option>
+        <option value="Lose weight">Lose weight</option>
+        <option value="Maintain weight">Maintain weight</option>
+        <option value="Gain muscle">Gain muscle</option>
+      </select>
+
+      <label>Activity Level</label>
+      <select name="activity" required>
+        <option value="" disabled selected>Select</option>
+        <option value="Sedentary">Sedentary</option>
+        <option value="Lightly active">Lightly active</option>
+        <option value="Moderately active">Moderately active</option>
+        <option value="Very active">Very active</option>
+      </select>
+
+      <button type="submit" class="btn-submit">Submit ✅</button>
+    </form>
+    <!-- ✅ FORMSPREE FORM END -->
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MyEasyDietPlan</p>
+  </footer>
+
+</body>
+</html>
