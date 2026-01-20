@@ -39,14 +39,15 @@
       <!-- ✅ Optional spam protection (do not remove) -->
       <input type="text" name="_gotcha" style="display:none">
 
+      <!-- =========================
+           BASIC INFO
+      ========================== -->
+
       <label>Your Name</label>
       <input type="text" name="name" placeholder="Your full name" required />
 
       <label>Your Email</label>
       <input type="email" name="email" placeholder="example@gmail.com" required />
-
-      <!-- ✅ Helps Formspree reply correctly -->
-      <input type="hidden" name="_replyto" value="%email%">
 
       <label>Age</label>
       <input type="number" name="age" placeholder="e.g. 30" required />
@@ -57,6 +58,7 @@
         <option value="Male">Male</option>
         <option value="Female">Female</option>
         <option value="Other">Other</option>
+        <option value="Prefer not to say">Prefer not to say</option>
       </select>
 
       <label>Weight (kg)</label>
@@ -65,22 +67,124 @@
       <label>Height (cm)</label>
       <input type="number" name="height" placeholder="e.g. 170" required />
 
+      <label>Target Weight (kg)</label>
+      <input type="number" name="target_weight" placeholder="e.g. 60" />
+
+      <!-- =========================
+           GOAL + ACTIVITY
+      ========================== -->
+
       <label>Your Goal</label>
       <select name="goal" required>
         <option value="" disabled selected>Select</option>
         <option value="Lose weight">Lose weight</option>
         <option value="Maintain weight">Maintain weight</option>
         <option value="Gain muscle">Gain muscle</option>
+        <option value="Improve health">Improve health</option>
       </select>
 
       <label>Activity Level</label>
       <select name="activity" required>
         <option value="" disabled selected>Select</option>
-        <option value="Sedentary">Sedentary</option>
-        <option value="Lightly active">Lightly active</option>
-        <option value="Moderately active">Moderately active</option>
-        <option value="Very active">Very active</option>
+        <option value="Sedentary">Sedentary (desk job, little walking)</option>
+        <option value="Lightly active">Lightly active (walk sometimes)</option>
+        <option value="Moderately active">Moderately active (exercise 3–4x/week)</option>
+        <option value="Very active">Very active (exercise 5–6x/week)</option>
       </select>
+
+      <label>How many days per week can you exercise?</label>
+      <select name="exercise_days">
+        <option value="" disabled selected>Select</option>
+        <option value="0">0 days</option>
+        <option value="1-2">1–2 days</option>
+        <option value="3-4">3–4 days</option>
+        <option value="5+">5+ days</option>
+      </select>
+
+      <!-- =========================
+           FOOD PREFERENCES
+      ========================== -->
+
+      <label>Food Preference</label>
+      <select name="food_preference" required>
+        <option value="" disabled selected>Select</option>
+        <option value="No preference">No preference</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Pescatarian">Pescatarian</option>
+        <option value="Non-vegetarian">Non-vegetarian</option>
+      </select>
+
+      <label>Meals per day you prefer</label>
+      <select name="meals_per_day">
+        <option value="" disabled selected>Select</option>
+        <option value="2">2 meals</option>
+        <option value="3">3 meals</option>
+        <option value="4">4 meals</option>
+        <option value="5">5 meals (small portions)</option>
+      </select>
+
+      <label>Any allergies or foods to avoid?</label>
+      <input type="text" name="allergies" placeholder="e.g. peanuts, lactose, gluten (optional)" />
+
+      <label>Foods you dislike (optional)</label>
+      <input type="text" name="dislikes" placeholder="e.g. fish, oats, eggs (optional)" />
+
+      <!-- =========================
+           HEALTH + LIFESTYLE
+      ========================== -->
+
+      <label>Any medical condition? (optional)</label>
+      <select name="medical_condition">
+        <option value="" disabled selected>Select</option>
+        <option value="None">None</option>
+        <option value="Diabetes">Diabetes</option>
+        <option value="Thyroid">Thyroid</option>
+        <option value="PCOS">PCOS</option>
+        <option value="High blood pressure">High blood pressure</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Daily Water Intake</label>
+      <select name="water_intake">
+        <option value="" disabled selected>Select</option>
+        <option value="Less than 1L">Less than 1L</option>
+        <option value="1-2L">1–2L</option>
+        <option value="2-3L">2–3L</option>
+        <option value="More than 3L">More than 3L</option>
+      </select>
+
+      <label>Average Sleep (hours/night)</label>
+      <select name="sleep_hours">
+        <option value="" disabled selected>Select</option>
+        <option value="Less than 5">Less than 5</option>
+        <option value="5-6">5–6</option>
+        <option value="6-7">6–7</option>
+        <option value="7-8">7–8</option>
+        <option value="8+">8+</option>
+      </select>
+
+      <label>What is your biggest challenge?</label>
+      <select name="biggest_challenge">
+        <option value="" disabled selected>Select</option>
+        <option value="Craving sweets">Craving sweets</option>
+        <option value="Late night eating">Late night eating</option>
+        <option value="Portion control">Portion control</option>
+        <option value="Busy schedule">Busy schedule</option>
+        <option value="Emotional eating">Emotional eating</option>
+        <option value="No motivation">No motivation</option>
+      </select>
+
+      <!-- =========================
+           EXTRA MESSAGE
+      ========================== -->
+
+      <label>Anything else you want to tell us? (optional)</label>
+      <textarea
+        name="notes"
+        rows="4"
+        placeholder="Example: I want a plan for 1200 calories, no rice at dinner, high protein, etc."
+      ></textarea>
 
       <button type="submit" class="btn-submit">Submit ✅</button>
     </form>
